@@ -1,4 +1,4 @@
-# electron-vite-template
+# electron-tools
 
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/umbrella22/electron-vite-template)
 ![GitHub Repo stars](https://img.shields.io/github/stars/umbrella22/electron-vite-template)
@@ -58,5 +58,4 @@ $ yarn build
 
 # Note
 
-- [gitee](https://gitee.com/Zh-Sky/electron-vite-template) is only for domestic users to pull code，from github to synchronize，please visit github for PR
-- **Welcome to Issues and PR**
+-
