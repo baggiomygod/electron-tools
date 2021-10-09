@@ -2,7 +2,7 @@ import { ipcMain, dialog, BrowserWindow } from 'electron'
 import Server from '../server'
 import { winURL } from '../config/StaticPath'
 import { updater } from './HotUpdater'
-
+import {pdfWatermark} from './ipcMainHandles/pdf-handle'
 export default {
   Mainfunc(mainWindow: BrowserWindow, IsUseSysTitle: Boolean) {
     ipcMain.handle('IsUseSysTitle', async () => {
@@ -76,6 +76,7 @@ export default {
         webPreferences: {
           nodeIntegration: true,
           contextIsolation: false,
+          enableRemoteModule: true,
           webSecurity: false,
           // 如果是开发模式可以使用devTools
           devTools: process.env.NODE_ENV === 'development',
@@ -105,5 +106,6 @@ export default {
         }
       })
     })
+    pdfWatermark()
   }
 }

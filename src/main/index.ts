@@ -4,8 +4,13 @@ import { app } from 'electron'
 import InitWindow from './services/windowManager'
 import DisableButton from './config/DisableButton'
 import electronDevtoolsInstaller, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer'
+// import { initMain } from '@core/main.init'
+import { initMain } from '../core/main.init'
+
+initMain()
 
 function onAppReady() {
+
   new InitWindow().initWindow()
   DisableButton.Disablef12()
   if (process.env.NODE_ENV === 'development') {

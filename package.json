@@ -36,7 +36,7 @@
     "chalk": "^4.1.2",
     "cross-env": "^7.0.3",
     "del": "^6.0.0",
-    "electron": "^13.1.9",
+    "electron": "13.1.9",
     "electron-builder": "^22.11.7",
     "electron-devtools-installer": "^3.2.0",
     "element-plus": "^1.1.0-beta.9",
@@ -46,7 +46,7 @@
     "multispinner": "^0.2.1",
     "portfinder": "^1.0.28",
     "rollup-plugin-esbuild": "^4.5.0",
-    "rollup-plugin-obfuscator": "^0.2.0",
+    "rollup-plugin-obfuscator": "0.2.1",
     "sass": "^1.39.0",
     "tslib": "^2.3.1",
     "typescript": "^4.4.2",
@@ -61,5 +61,6 @@
     "electron",
     "vue3",
     "rollup"
-  ]
+  ],
+  "__npminstall_done": false
 }

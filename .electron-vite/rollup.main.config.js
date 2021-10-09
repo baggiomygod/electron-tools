@@ -5,7 +5,6 @@ const esbuild = require('rollup-plugin-esbuild')
 const alias = require('@rollup/plugin-alias')
 const json = require('@rollup/plugin-json')
 const obfuscator = require('rollup-plugin-obfuscator');
-
 module.exports = (env = 'production') => {
   return {
     input: path.join(__dirname, '../src/main/index.ts'),
@@ -42,7 +41,7 @@ module.exports = (env = 'production') => {
           '.js': 'jsx'
         },
       }),
-      obfuscator({}),
+      obfuscator.default({}),
       alias({
         entries: [
           { find: '@main', replacement: path.join(__dirname, '../src/main'), },

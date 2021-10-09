@@ -40,6 +40,7 @@ class MainInit {
       webPreferences: {
         contextIsolation: false,
         nodeIntegration: true,
+        enableRemoteModule: true,
         webSecurity: false,
         // 如果是开发模式可以使用devTools
         devTools: process.env.NODE_ENV === 'development',

@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
-
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css'
 import './styles/index.scss'
@@ -22,5 +21,4 @@ errorHandler(app)
 
 // 全局引入 TitleBar 组件
 app.component("TitleBar", TitleBar);
-
 app.mount("#app")
